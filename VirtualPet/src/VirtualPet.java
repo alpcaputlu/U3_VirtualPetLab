@@ -7,7 +7,7 @@ public class VirtualPet {
     private int ageY;
     private int ageM;
 
-    private VirtualPet(String name, int energy, int weight, int ageY, int ageM) {
+    public VirtualPet(String name) {
         this.name = name;
         this.energy = 0;
         this.happinessLevel = 0;
@@ -16,7 +16,7 @@ public class VirtualPet {
         this.ageM = 0;
     }
 
-    public String getName(String name) {
+    public String getName() {
         return name;
     }
 
@@ -59,7 +59,11 @@ public class VirtualPet {
                 ageM = 0;
                 ageY++;
             }
+
         }
 
+    }
+    public int getEnergyLevel(){
+        return energy;
     }
 }
